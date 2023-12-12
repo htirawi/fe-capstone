@@ -1,6 +1,4 @@
-<h1 align="center">Meta Frontend Little Lemon</h1>
-
-<h2 align="center">Meta Front End Developer Capstone</h2>
+<h1 align="center">Meta Front End Developer Capstone</h1>
 
 <br />
 <p align="center">
