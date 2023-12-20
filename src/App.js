@@ -1,17 +1,48 @@
-import "./App.css";
-import Nav from "./components/Nav";
-import Main from "./components/Main";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import Specials from './components/Specials/Specials';
+
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import menuData from './data/MenuData';
+
+import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 function App() {
   return (
-    <>
-      <Main />
-      <Nav />
-      <Header />
-      <Footer />
-    </>
+    <ShoppingCartProvider>
+      <div className="App">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <HomePage />
+              </Layout>
+            }
+          />
+
+          <Route
+            path="/menu"
+            element={
+              <Layout>
+                <Specials menu={menuData} />
+              </Layout>
+            }
+          />
+
+          <Route
+            path="/about"
+            element={
+              <Layout>
+                <AboutPage />
+              </Layout>
+            }
+          />
+        </Routes>
+      </div>
+    </ShoppingCartProvider>
   );
 }
 

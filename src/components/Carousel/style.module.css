@@ -1,0 +1,56 @@
+.carouselContainer {
+  position: relative;
+  max-width: 600px;
+  margin: 3rem;
+  overflow: hidden;
+}
+
+.carouselImage {
+  width: 100%;
+  display: block;
+  border-radius: 8%;
+  transition: transform 0.5s ease;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.carouselButton svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.carouselIndicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+
+.carouselDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.carouselDot.active {
+  background-color: #f4ce14;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}

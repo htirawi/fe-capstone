@@ -1,0 +1,18 @@
+.aboutContainer {
+    padding: 2% 10%;
+}
+
+.aboutSection {
+    margin-bottom: 20px;
+}
+
+.aboutSection h2 {
+    color: #EE9972;
+    margin-bottom: 10px;
+}
+
+.aboutSection p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #495e57;
+}

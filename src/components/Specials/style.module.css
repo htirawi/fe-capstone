@@ -1,0 +1,15 @@
+.specialsContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 3vw;
+  flex-wrap: wrap;
+  padding: 2% 10%;
+}
+
+@media (max-width: 768px) {
+  .specialsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
