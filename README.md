@@ -14,6 +14,8 @@
     <a href="#Quick-Start">Quick Start</a>   &#10023;    
     <a href="#Contact">Author</a>&#10023;
   </p>
+
+   <h3 align="center"><a href="https://fe-capstone-nu.vercel.app/"><strong>« Try the demo here »</strong></a></h3>
   
   <p align="center"> 
     Feel the magical connection with Jordan, all of Jordan, envisioning it from a research post, tasting it on a plate, hearing it in the music, touching it in the furniture, seeing it in Jordanian wedding lights, sensing its warmth in the generosity of your Ma'zeb (Host). Jordan Heritage, discover your feelings for Jordan.
