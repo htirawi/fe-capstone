@@ -1,5 +1,7 @@
 import '@testing-library/jest-dom';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { updateTimes, initializeTimes } from './ReservationPage';
+import ReservationForm from '../components/ReservationForm/ReservationForm';
 
 global.fetch = jest.fn(() =>
   Promise.resolve({
@@ -30,4 +32,19 @@ test('should updateTimes correctly', () => {
   const updatedState = updateTimes(mockState, mockAction);
 
   expect(updatedState).toEqual(['10:00', '11:00']);
+});
+
+test('Renders the BookingForm heading', () => {
+  const availableTimes = ['10:00', '11:00'];
+  const dispatchOnDateChange = jest.fn();
+  const submitData = jest.fn();
+  render(
+    <ReservationForm
+      availableTimes={availableTimes}
+      dispatchOnDateChange={dispatchOnDateChange}
+      submitData={submitData}
+    />
+  );
+  const headingElement = screen.getByText('Book a Table');
+  expect(headingElement).toBeInTheDocument();
 });
