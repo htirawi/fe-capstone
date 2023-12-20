@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Cart from '../Cart/Cart';
 
-// import logo from '../../assets/images/logo.svg';
 import styles from './style.module.css';
 
 const Navbar = () => {
@@ -14,7 +13,14 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navContainer}>
-      <img className={styles.navLogo} src="/images/logo.svg" alt="little lemon logo" />
+      <Link to="/">
+        <img
+          className={styles.navLogo}
+          src="/images/logo.svg"
+          alt="little lemon logo"
+        />
+      </Link>
+
       <div className={`${styles.navLinks} ${isMenuVisible ? 'active' : ''}`}>
         <Link to="/" className={styles.navItems} onClick={toggleMenu}>
           Home
@@ -25,8 +31,12 @@ const Navbar = () => {
         <Link to="/about" className={styles.navItems} onClick={toggleMenu}>
           About
         </Link>
-        <Link to="/booking" className={styles.navItems} onClick={toggleMenu}>
-          Booking
+        <Link
+          to="/reservation"
+          className={styles.navItems}
+          onClick={toggleMenu}
+        >
+          Reservation
         </Link>
         <Link to="/login" className={styles.navItems} onClick={toggleMenu}>
           Login

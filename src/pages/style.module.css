@@ -16,3 +16,45 @@
     line-height: 1.6;
     color: #495e57;
 }
+
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color:#495e57;
+    margin-top: 10rem;
+}
+
+.orderContainer p {
+    color:#495e57;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderRemoveButton{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 14px;
+}
+.orderButtons {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.orderItem button {
+    margin-left: 10px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

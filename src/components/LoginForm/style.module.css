@@ -1,0 +1,38 @@
+.loginMain {
+  min-height: 70vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginForm {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.loginForm input[type='text'],
+.loginForm input[type='password'] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.formTitle {
+    text-align: center;
+}
+
+.loginFormField {
+    display: contents;
+    margin-bottom: 20px;
+}
+
+.errorMsg {
+    color: red
+}

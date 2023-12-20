@@ -5,7 +5,7 @@ import styles from './style.module.css';
 const Header = () => {
   const navigate = useNavigate();
   const handleReservation = () => {
-    navigate('/booking');
+    navigate('/reservation');
   };
   return (
     <header className={styles.headerBackground}>
