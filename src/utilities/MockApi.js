@@ -1,33 +1,3 @@
-// const fetchAPI = (date) => {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             if (availableTimesByDate[date]) {
-//                 resolve(availableTimesByDate[date])
-//             }
-//             else {
-//                 reject(new Error('No available times for the selected date.'));
-//             }
-//         }, 1000)
-//     })
-// }
-
-// const submitAPI = (formData) => {
-
-//     availableTimesByDate[formData.date] = availableTimesByDate[formData.date].filter(time => time !== formData.time);
-
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             if (formData) {
-//                 resolve(true); // Simulate successful submission
-//             } else {
-//                 reject(new Error('Form submission failed.'));
-//             }
-//         }, 1000); // Simulate API delay
-//     });
-// };
-
-// export { fetchAPI, submitAPI }
-
 const seededRandom = (seed) => {
   const m = 2 ** 35 - 31;
   const a = 185852;
